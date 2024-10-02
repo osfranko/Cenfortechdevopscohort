@@ -1,0 +1,23 @@
+on: push
+jobs:
+  first-job:
+    run-on: windows-latest
+    steps:
+     -run: node--version
+     -run: npm node--version
+     -database:
+      host: localhost
+      port: 5432
+      username: admin
+      password: standard 
+      features:
+       - user_authentication
+       - data_encryption
+        - analytics
+        services:
+          auth_service:
+          url: http://auth.example.com
+          timeout: 30
+           data_service:
+          url: http://data.example.com
+          timeout: 45
