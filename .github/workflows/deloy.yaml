@@ -1,10 +1,13 @@
-on: push 
+name: osasere, jeremiah, joshua and Ekhator
+on: [push]
 jobs:
-    first-job:
-     runs-on: windows powershell 7
-     steps:
-         - run: node --version
-         - run: npm --version
+  print_message 
+    runs-on:ubuntu-latest
+    steps:
+    -name: print a message 
+run: echo "we are cenfortech students!" 
+      
+     
     
         
         
