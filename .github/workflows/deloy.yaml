@@ -1,13 +1,11 @@
-name: osasere, jeremiah, joshua and Ekhator
 on: [push]
+
+name: osasere, jeremiah, joshua, ekhator
 jobs:
-  print_message 
-    runs-on:ubuntu-latest
-    steps:
-    -name: print a message 
-run: echo "we are cenfortech students!" 
-      
-     
-    
-        
-        
+
+    print_message: 
+     runs-on: ubuntu-latest
+
+     steps: 
+     - name: print a message
+       run: echo "we are students of cenfortech!"
